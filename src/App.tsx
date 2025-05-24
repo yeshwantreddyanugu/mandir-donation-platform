@@ -11,7 +11,7 @@ import EventsCalendar from './pages/EventsCalendar';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/mandir-donation-platform">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
