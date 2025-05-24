@@ -1,5 +1,6 @@
 {
   "name": "vite-react-typescript-starter",
+  "homepage": "https://yeshwantreddyanugu.github.io/mandir-donation-platform",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,16 +8,19 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "framer-motion": "^11.0.8",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.22.3",
     "react-hook-form": "^7.51.0",
     "react-responsive-carousel": "^3.2.23",
-    "framer-motion": "^11.0.8"
+    "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",

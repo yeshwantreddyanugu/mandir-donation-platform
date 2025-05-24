@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, Image, Users, BuildingTemple, CircleDollarSign, Heart } from 'lucide-react';
+import { Calendar, Image, Users, Building, CircleDollarSign, Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Home: React.FC = () => {
@@ -92,7 +92,7 @@ const Home: React.FC = () => {
           >
             {[
               {
-                icon: <BuildingTemple className="h-12 w-12 text-saffron-600" />,
+                icon: <Building className="h-12 w-12 text-saffron-600" />,
                 title: "Temple Construction",
                 description: "Learn about our temple design and construction progress.",
                 link: "/about",

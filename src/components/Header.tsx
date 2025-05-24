@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { Menu, X, Om } from 'lucide-react';
+import { Menu, X, Home } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +38,7 @@ const Header: React.FC = () => {
       <div className="container-custom flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <Om 
+          <Home 
             size={36} 
             className={`${isScrolled ? 'text-saffron-600' : 'text-gold-500'} mr-2`} 
           />
@@ -119,7 +119,7 @@ const Header: React.FC = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex justify-between items-center mb-8">
             <Link to="/" onClick={closeMenu} className="flex items-center">
-              <Om size={32} className="text-saffron-600 mr-2" />
+              <Home size={32} className="text-saffron-600 mr-2" />
               <h1 className="text-xl font-bold text-maroon-600">
                 Sri Venkateswara Temple
               </h1>
